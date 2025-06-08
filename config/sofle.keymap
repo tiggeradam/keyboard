@@ -35,7 +35,7 @@
 // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  sb   |
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  | Play  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &studio_unlock
@@ -102,6 +102,7 @@
 &none             &none           &none           &none           &none           &none            &none           &none  &none &none &none &none &none &none
                                   &none           &none           &none           &none            &none           &none  &none &none &none &none
             >;
+            sensor-bindings = <&inc_dec_kp RGB_HUI RGB_HUD &inc_dec_kp RGB_BRI RGB_BRD>;
         };
 
     };
